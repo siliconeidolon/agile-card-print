@@ -32,14 +32,6 @@ label {
   margin-bottom: 5px;
 }
 
-.card {
-  margin-top: 30px;
-  border: 5px solid black;
-  width: 500px;
-  height: 300px;
-  position: relative;
-}
-
 .bug {
   background-color: #ffe8e8;
 }
@@ -78,6 +70,14 @@ label {
 
 .feature {
   background-color: #e0e9ff;
+}
+
+.card {
+  margin-bottom: 35px;
+  border: 5px solid black;
+  width: 500px;
+  height: 315px;
+  position: relative;
 }
 
 .card .title {
@@ -136,10 +136,6 @@ label {
     visibility: visible;
   }
   .card {
-    margin-right: 5px;
-    margin-bottom: 50px;
-    border: 5px solid black;
-    position: relative;
     -webkit-print-color-adjust: exact;
   }
   .bug {

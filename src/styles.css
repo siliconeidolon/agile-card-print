@@ -1,0 +1,151 @@
+.App {
+  font-family: sans-serif;
+  text-align: left;
+}
+
+input {
+  margin-bottom: 30px;
+  font-family: monospace;
+  display: block;
+  border: none;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24), 0 5px 14px 0 rgba(0, 0, 0, 0.19);
+}
+
+hr {
+  margin-top: 30px;
+}
+
+select {
+  margin-bottom: 30px;
+  display: block;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24), 0 5px 14px 0 rgba(0, 0, 0, 0.19);
+  font-family: monospace;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: monospace;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.card {
+  margin-top: 30px;
+  border: 5px solid black;
+  width: 500px;
+  height: 300px;
+  position: relative;
+}
+
+.bug {
+  background-color: #ffe8e8;
+}
+
+.btn-print {
+  font-family: monospace;
+  font-weight: bold;
+  color: rgb(31, 31, 31);
+  border: none;
+  padding: 15px;
+  margin-top: 10px;
+  margin-right: 20px;
+  background: #e2def8;
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.4s;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24), 0 5px 14px 0 #e2def8;
+}
+
+.btn-print:hover {
+  background: #b6aff1;
+  cursor: pointer;
+}
+
+.btn-print:active {
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.grid-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". ." ". .";
+}
+
+.feature {
+  background-color: #e0e9ff;
+}
+
+.card .title {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 48px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  word-wrap: break-word;
+}
+
+.story-number {
+  margin: 0px 0px 10px 0px;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 24px;
+  position: absolute;
+  left: 20px;
+  bottom: 0px;
+  line-height: 36px;
+}
+
+.effort {
+  margin: 0px 0px 10px 0px;
+  font-weight: bold;
+  font-size: 56px;
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+}
+
+.text-input {
+  padding: 10px;
+}
+
+@page {
+  size: landscape;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .break {
+    visibility: visible;
+    page-break-before: always;
+  }
+  .controls {
+    display: none;
+  }
+  .card,
+  .card * {
+    visibility: visible;
+  }
+  .card {
+    margin-right: 5px;
+    margin-bottom: 50px;
+    border: 5px solid black;
+    position: relative;
+    -webkit-print-color-adjust: exact;
+  }
+  .bug {
+    background-color: #ffe8e8;
+  }
+  .feature {
+    background-color: #e0e9ff;
+  }
+}

@@ -62,7 +62,7 @@ label {
 
 .grid-container {
   display: grid;
-
+  width: 1080px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: ". ." ". .";
